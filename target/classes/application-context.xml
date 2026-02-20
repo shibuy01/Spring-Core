@@ -6,34 +6,15 @@
 
     <!-- bean definitions here -->
     
-    <bean name="emp1" class="com.my.spring.Employee">
-    	<property name="name" value="shibu"/>
-    	<property name="phone">
-    		<list>
-    			<value>7256954155</value>
-    			<value>7633954155</value>
-    			<value>9798605532</value>
-    			<value>952530357</value>
-    		</list>
+    <bean name="bref" class="com.my.spring.B">
+    	<property name="y" value="50" />
+    </bean>
+    
+    <bean name="aref" class="com.my.spring.A">
+    	<property name="x" value="30" />
+    	<property name="obj">
+    		<ref  bean="bref"/>
     	</property>
-    	
-    	<property name="address">
-    		<set>
-    			<value>Noida</value>
-    			<value>Meerut</value>
-    			<value>Bihar</value>
-    			<value>Delhi</value>
-    		</set>
-    	</property>
-    	
-    	<property name="courses">
-    		<map>
-    			<entry key="BCA" value=" 3 Years"/>
-    			<entry key="12th" value=" 2 Years"/>
-    			<entry key="10th" value=" 1 Years"/>
-    		</map>
-    	</property>
-    	
     </bean>
 
 </beans>

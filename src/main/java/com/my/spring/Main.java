@@ -11,7 +11,7 @@ package com.my.spring;
 			
 			ApplicationContext ioc = new ClassPathXmlApplicationContext("application-context.xml");
 			
-			Employee bean = ioc.getBean("emp1",Employee.class);
+			A bean = ioc.getBean("aref",A.class);
 			
 			System.out.println(bean);
 			
