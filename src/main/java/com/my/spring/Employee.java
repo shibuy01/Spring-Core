@@ -1,30 +1,30 @@
 package com.my.spring;
 
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 public class Employee {
+
+	private String name;
 	
+	private List<String> phone;
 	
-	private int id;
+	private Set<String> address;
 	
-	private String name, gender;
+	private Map<String ,String> courses;
 
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Employee(int id, String name, String gender) {
+	public Employee(String name, List<String> phone, Set<String> address, Map<String, String> courses) {
 		super();
-		this.id = id;
 		this.name = name;
-		this.gender = gender;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
+		this.phone = phone;
+		this.address = address;
+		this.courses = courses;
 	}
 
 	public String getName() {
@@ -35,17 +35,33 @@ public class Employee {
 		this.name = name;
 	}
 
-	public String getGender() {
-		return gender;
+	public List<String> getPhone() {
+		return phone;
 	}
 
-	public void setGender(String gender) {
-		this.gender = gender;
+	public void setPhone(List<String> phone) {
+		this.phone = phone;
+	}
+
+	public Set<String> getAddress() {
+		return address;
+	}
+
+	public void setAddress(Set<String> address) {
+		this.address = address;
+	}
+
+	public Map<String, String> getCourses() {
+		return courses;
+	}
+
+	public void setCourses(Map<String, String> courses) {
+		this.courses = courses;
 	}
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", gender=" + gender + "]";
+		return "Employee [name=" + name + ", phone=" + phone + ", address=" + address + ", courses=" + courses + "]";
 	}
 	
 }

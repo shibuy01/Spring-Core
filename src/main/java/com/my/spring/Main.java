@@ -15,11 +15,5 @@ package com.my.spring;
 			
 			System.out.println(bean);
 			
-			
-			Employee bean2 = ioc.getBean("emp2",Employee.class);
-
-			System.out.println(bean2);
-			
-
 		}
 }
