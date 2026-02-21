@@ -6,15 +6,10 @@
 
     <!-- bean definitions here -->
     
-    <bean name="bref" class="com.my.spring.B">
-    	<property name="y" value="50" />
-    </bean>
-    
-    <bean name="aref" class="com.my.spring.A">
-    	<property name="x" value="30" />
-    	<property name="obj">
-    		<ref  bean="bref"/>
-    	</property>
+    <bean class="com.my.spring.Persion" name="Persion">
+    	<constructor-arg name="name" value="Shibu" />
+    	<constructor-arg name="address" value="Noida" />
+    	<constructor-arg name="age" value="20" />
     </bean>
 
 </beans>

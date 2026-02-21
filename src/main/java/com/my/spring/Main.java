@@ -11,7 +11,7 @@ package com.my.spring;
 			
 			ApplicationContext ioc = new ClassPathXmlApplicationContext("application-context.xml");
 			
-			A bean = ioc.getBean("aref",A.class);
+			Persion bean = ioc.getBean("Persion",Persion.class);
 			
 			System.out.println(bean);
 			
