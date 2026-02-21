@@ -1,19 +1,17 @@
 package com.my.spring;
 
-	import org.springframework.context.ApplicationContext;
-	import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-	import com.my.spring.Employee;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 	public class Main {
 
 		public static void main(String[] args) {
 			
-			ApplicationContext ioc = new ClassPathXmlApplicationContext("application-context.xml");
+			AbstractApplicationContext ioc = new ClassPathXmlApplicationContext("application-context.xml");
 			
-			Persion bean = ioc.getBean("Persion",Persion.class);
+			Samosa bean = ioc.getBean("Samosa",Samosa.class);
 			
 			System.out.println(bean);
-			
+			ioc.registerShutdownHook();
 		}
 }

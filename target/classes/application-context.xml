@@ -6,10 +6,8 @@
 
     <!-- bean definitions here -->
     
-    <bean class="com.my.spring.Persion" name="Persion">
-    	<constructor-arg  value="Shibu" />
-    	<constructor-arg  value="Noida" />
-    	<constructor-arg  value="20" />
+    <bean class="com.my.spring.Samosa" name="Samosa" init-method="init" destroy-method="destroy">
+    	<property name="price" value="30" />
     </bean>
 
 </beans>

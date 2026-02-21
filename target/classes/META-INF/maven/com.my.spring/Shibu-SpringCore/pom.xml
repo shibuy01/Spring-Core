@@ -23,6 +23,11 @@
 		    <version>7.0.3</version>
 		    <scope>compile</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.spring.jdbc</groupId>
+			<artifactId>Spring-Jdbc</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
   </dependencies>
   
   
