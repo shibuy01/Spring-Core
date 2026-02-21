@@ -1,6 +1,9 @@
 package com.my.spring;
 
-public class Samosa {
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class Samosa implements InitializingBean , DisposableBean {
 
 	private double price;
 
@@ -26,12 +29,20 @@ public class Samosa {
 	public String toString() {
 		return "Samosa [price=" + price + "]";
 	}
-	
-	public void init() {
-		System.out.println("Inside init method");
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("taking Samosa init");
+		
+	}
+
+	@Override
+	public void destroy() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Going to put bottle back in shop");
+		
 	}
 	
-	public void destroy() {
-		System.out.println("Inside destory method");
-	}
+	
 }

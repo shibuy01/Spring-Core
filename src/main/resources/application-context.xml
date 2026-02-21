@@ -6,7 +6,7 @@
 
     <!-- bean definitions here -->
     
-    <bean class="com.my.spring.Samosa" name="Samosa" init-method="init" destroy-method="destroy">
+    <bean class="com.my.spring.Samosa" name="Samosa">
     	<property name="price" value="30" />
     </bean>
 
