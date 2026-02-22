@@ -8,10 +8,13 @@
         http://www.springframework.org/schema/context 
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:annotation-config />
+    
 
-    <bean class="com.my.spring.Pepsi" name="Pepsi">
-    	<constructor-arg value="30"/>
+    <bean class="com.my.spring.Address" name="address">
+    	<property name="street" value="Sec-62" />
+    	<property name="city" value="Noida" />
 	</bean>
+	
+	<bean class="com.my.spring.Emp" name="emp1" autowire="byName"/>
 
 </beans>
