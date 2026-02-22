@@ -15,6 +15,11 @@
     	<property name="city" value="Noida" />
 	</bean>
 	
+	 <bean class="com.my.spring.Address" name="address1">
+    	<property name="street" value="Siwan" />
+    	<property name="city" value="Bihar" />
+	</bean>
+	
 	<bean class="com.my.spring.Emp" name="emp1" />
 
 </beans>
