@@ -1,7 +1,10 @@
 package com.my.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Emp {
 
+	@Autowired
 	private Address address;
 
 	public Emp(Address address) {
