@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 			
 			AbstractApplicationContext ioc = new ClassPathXmlApplicationContext("application-context.xml");
 			
-			Samosa bean = ioc.getBean("Samosa",Samosa.class);
+			Pepsi bean = ioc.getBean("Pepsi",Pepsi.class);
 			
 			System.out.println(bean);
 			ioc.registerShutdownHook();
